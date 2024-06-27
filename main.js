@@ -29,12 +29,24 @@ const getRandomInt = (min, max) => {
 }
 
 const generateHint = () =>  {
+  solution = 'abcd';
   // your code here
+  if(printBoard.length )
+
+  // if(!guess === solution) {
+  //   console.log("Here is your hint")
+  // }
 }
 
 const mastermind = (guess) => {
   solution = 'abcd'; // Comment this out to generate a random solution
   // your code here
+  console.log(guess)
+  if(guess === solution){
+    console.log("You win!")
+    return true
+  }
+  return false
 }
 
 
